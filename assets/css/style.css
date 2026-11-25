@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --brand-plum: #4B2882;
+  --brand-plum-dark: #33195c;
+  --brand-lilac: #E598F2;
+  --brand-lilac-soft: #f9ecfc;
+  --brand-gold: #C5A059;
+  --bg-cream: #FCF9FD;
+  --text-dark: #23192D;
+  --text-muted: #6A5D78;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .brand-font {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(75, 40, 130, 0.1);
+}
+
+.navbar-brand img {
+  height: 58px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-link {
+  color: var(--brand-plum) !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #a845b8 !important;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-plum {
+  background-color: var(--brand-plum);
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.65rem 1.6rem;
+  font-weight: 500;
+  border: 1px solid var(--brand-plum);
+  transition: all 0.25s ease;
+}
+
+.btn-plum:hover {
+  background-color: var(--brand-plum-dark);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(75, 40, 130, 0.22);
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: #fff;
+  border-radius: 50px;
+  padding: 0.6rem 1.3rem;
+  font-weight: 600;
+  border: none;
+  transition: all 0.25s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.28);
+}
+
+/* Hero Banner */
+.hero-section {
+  background: linear-gradient(135deg, #f8e8fc 0%, #ffffff 55%, #f1e6fa 100%);
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(75, 40, 130, 0.08);
+}
+
+.page-header {
+  background: linear-gradient(135deg, var(--brand-plum) 0%, #6839b0 100%);
+  color: #fff;
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+/* Trust Badges */
+.trust-bar {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(75, 40, 130, 0.08);
+}
+
+/* Product Cards */
+.product-card {
+  background: #fff;
+  border: 1px solid rgba(75, 40, 130, 0.09);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(75, 40, 130, 0.1);
+  border-color: var(--brand-lilac);
+}
+
+.product-img-wrap {
+  height: 250px;
+  overflow: hidden;
+  background-color: var(--brand-lilac-soft);
+  position: relative;
+}
+
+.product-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img-wrap img {
+  transform: scale(1.05);
+}
+
+.badge-natural {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--brand-plum);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 50px;
+}
+
+.price-tag {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-plum);
+}
+
+/* Floating WhatsApp Button */
+.floating-wa {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #25D366;
+  color: #fff;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  z-index: 1050;
+  text-decoration: none;
+  transition: transform 0.25s ease;
+}
+
+.floating-wa:hover {
+  transform: scale(1.1);
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background-color: var(--brand-plum-dark);
+  color: #e9dff5;
+}
